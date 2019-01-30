@@ -3,7 +3,9 @@ echo RUNNING HENRY
 now=$(date +'%F_%T')
 echo EXPORTING RESULTS TO output/$now
 
-mkdir output/$now
+mkdir -p output/$now
+echo RUNNING HENRY PULSE
+henry pulse --host $1 --output="output/$now/henry_pulse.txt"
 echo ANALYZING PROJECTS
 henry analyze projects --host $1 --output="output/$now/henry_analyze_projects.txt"
 echo DONE
