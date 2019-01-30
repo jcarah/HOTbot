@@ -2,7 +2,7 @@
 
 ### HOTbot, a Henry Output Tool
 
-Automate a sequence [Henry](https://github.com/josephaxisa/henry) pulse, analyze, and vacuum commands and output the results to a common directory.
+Automate a sequence of [Henry](https://github.com/josephaxisa/henry) pulse, analyze, and vacuum commands and output the results to a common directory.
 
 ### Setup
 
@@ -13,6 +13,8 @@ To install HOTbot, clone this repo locally:
 Ensure that HOTbot is executable:
 
 ```chmod +x hotbot.sh```
+
+Ensure that Henry is installed and running by running ```henry --help```. If any errors are returned, please consult the [Henry](https://github.com/josephaxisa/henry) repository.
 
 Ensure that the path to `config.yml` is referenced in your global [Global Config File](https://github.com/josephaxisa/henry#global-config-file).
 
